@@ -1,0 +1,4 @@
+div {
+  flex-direction: column; }
+  div p {
+    color: red; }
