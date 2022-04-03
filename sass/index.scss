@@ -1,6 +1,17 @@
-div{
-    flex-direction: column;
-    p {
-        color: red;
-    }
-}
+/* VARIABLES */
+@import './misc/variables';
+
+/* GLOBALES */
+@import './misc/normalize';
+@import './misc/mixins';
+
+/* PARTIALS */
+@import './partials/header';
+@import './partials/footer';
+
+/* VIEWS */
+@import './views/home';
+@import './views/sobre-mí';
+@import './views/servicios-ofrecidos';
+@import './views/portafolio';
+@import './views/contactame';

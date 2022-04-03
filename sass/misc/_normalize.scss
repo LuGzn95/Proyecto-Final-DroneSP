@@ -2,5 +2,39 @@
 
 /* NORMALIZE */
 
+*,
+*::after
+*::before
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* GLOBALES */
 
+html {
+    font-size: 62.5%;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    background-image: linear-gradient(to bottom, #000000, #050505, #090909, #0d0d0d, #111111, #141414, #171717, #191919, #1c1c1c, #1e1e1e, #212121, #242424);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/*HELPERS*/
+.flex-row {
+    display: flex;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
