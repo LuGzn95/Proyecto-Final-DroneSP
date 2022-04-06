@@ -8,13 +8,15 @@
     <meta name="description" content="Sebastián Pedranti, Drone Pilot">
     <meta name="keywords"  content="Breve descripción de mi como persona y Drone Pilot">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="preload" href="../../css/main.css" as="style">
     <link rel="stylesheet" href="../../css/main.css">
 </head>
 <body>
     <header class="container__header">
-        <div class="container__header--secciones">
+        <div class="container__header--secciones container">
             <h1 class="container__header--título">Sebastián Pedranti<span class="container__header--título--span" >Drone Pilot</span></h1clas>
         </div>
         <div class="navbar" >
@@ -38,46 +40,46 @@
         </div>                                             
     </header>
 
-    <div class="container__secciones">
-            <h2 class="título__sección">Sobre Mí</h2>
-            <p class="título__sección__descrip">Lorem ipsum ue eligendi nisi tempore. Dignissimos nesciunt ut reprehenderit voluptatum saepe alias eusci libero ratione.</p>
-        </div>  
-        <picture>
-            <img class="img__sobremí" src="../images/sebaseccionsobremi.jpg" alt="sebaseccionsobremi" width="1200px">
-        </picture> 
-    </main>    
-    <footer class="container__footer">
-        <section class="contenido__footer">
-            <ul class="contenido__footer--lista">
-                <li class="contenido__footer__datos"><span class="">Cel:</span> 2984xxxxxx</li>
-                <li class="contenido__footer__datos"><span class="">Email:</span> sebxxxxx@gmail.com</li>
-                <li class="contenido__footer__datos"><span class="">General Roca, Rio Negro</span></li>
+    <div class="container__secciones container">
+        <h2 class="título__sección">Sobre Mí</h2>
+        <p class="título__sección__descrip">Hola! soy Seba, me gusta jugar al padel, al roller hockey y editar videos. Descubrí esta pasión gracias a un amigo que me prestó su drone aun sabiendo que jamás había volado uno (mucha confianza!) y lo compré inmediatamente. Empezó como hobbie pero es un estilo de vida.</p>
+    </div>
+    <div class="container">
+        <picture class="foto__sección container">
+            <img class="foto__sección__sobremí container" src="../images/sebaseccionsobremi.jpg" alt="Foto de Seba Pedranti" width="1500px">
+        </picture>      
+    </div>  
+
+    <footer class="container__footer container">
+        <section class="contenido__footer container flex-wrap">
+            <ul class="contenido__footer--lista container flex-wrap">
+                <li class="datos"><span class="span__foot">Cel:</span> 2984xxxxxx</li>
+                <li class="datos"><span class="span__foot">Email:</span> sebxxxxx@gmail.com</li>
+                <li class="datos"><span class="span__foot">General Roca, Rio Negro</span></li>
             </ul>
-            <div class="contenido__footer--iconosredes">
-                <a href="https://www.facebook.com/sebastian.pedranti" target="_blank"><svg
-                        xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="64"
-                        height="64" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg></a>
-                <a href="https://www.instagram.com/dronesp2021" target="_blank"><svg
-                        xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="64"
-                        height="64" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <rect x="4" y="4" width="16" height="16" rx="4" />
-                        <circle cx="12" cy="12" r="3" />
-                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" /></svg></a>
-                <a href="https://www.youtube.com/channel/UCnB8bhVRKFxAGZMEIa0gVhw"
-                    target="_blank"><svg class="link" xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-brand-youtube" width="64" height="64" viewBox="0 0 24 24"
-                        stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <rect x="3" y="5" width="18" height="14" rx="4" />
-                        <path d="M10 9l5 3l-5 3z" /></svg></a>
+            <div class="contenido__footer--iconosredes flex-wrap flex-row">
+                <a class="iconos" href="https://www.facebook.com/sebastian.pedranti" target="_blank"><svg  class="iconos__link" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#971717" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                  </svg>
+                </a>
+                <a class="iconos" href="https://www.instagram.com/dronesp2021" target="_blank"><svg class="iconos__link" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#971717" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3" />
+                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                    </svg>
+                </a>
+                <a class="iconos" href="https://www.youtube.com/channel/UCnB8bhVRKFxAGZMEIa0gVhw"target="_blank"><svg class="iconos__link" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#971717" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="3" y="5" width="18" height="14" rx="4" />
+                    <path d="M10 9l5 3l-5 3z" />
+                    </svg>
+                </a>
             </div>
         </section>
     </footer>
+
 </body>
 </html>
 

@@ -1,1 +1,4 @@
-/* HELPERS */
+@mixin espacios($margin:0rem, $padding:0rem) {
+    margin: $margin;
+    padding: $padding;
+}   

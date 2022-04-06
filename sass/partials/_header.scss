@@ -2,55 +2,64 @@
 
 /* HEADER INDEX*/
 .container__header {
-    grid-area: header;
-    padding: 0rem;
-    margin: 0rem;
+    padding: 0rem auto;
+    margin: 0rem auto;
+    width: 1500px;
+    max-width: 100%;
     &--index {
-        padding: 0rem;
-        margin: 0rem;
+        padding: 0rem auto;
+        margin: 0rem auto;
         margin-bottom: 0rem;
         text-align: center;
         max-width: 100%;
-        background-image: url(../../assets/images/bg/header.svg);
+        background-image: url(../../assets/images/header.svg);
         }
     &--img {
-        padding-top: 2rem;
-        max-width: 100px;
+        padding: 2rem;
+        margin: 2rem auto;
+        max-width: 10rem;
         align-items: center;
-        margin: 0rem;
+        margin: 1rem auto;
         }
     &--título {
         font-size: 4em;
-        font-family: "Montserrat", sans-serif;
-        font-weight:bold;
+        font-family: 'Roboto Condensed', sans-serif;
         color: #971717;
+        margin: 0rem auto;
+        padding: 0rem;
         animation-duration: 3s;
         animation-name: backInLeft;
         animation-iteration-count: infinite;
         &--span {
         color: lightslategray;
-        font-size: 0.5em;
-        font-weight:bold;  
+        font-size: 0.5em; 
         }
     }        
+}
+.picture__index {
+    width: 1500px;
+    max-width: 100%;
+    height: 65vh;
+    margin: 0rem auto;
+    padding: 0rem auto;
+    align-items: center;
 }
   /* HEADER SECCIONES*/
 .container__header {
     grid-area: header;
-    padding: 0rem;
-    margin: 0rem;
+    padding: 0rem auto;
+    margin: 0rem auto;
     &--secciones {
     padding: 0rem;
     margin: 0rem;
     margin-bottom: 0rem;
     text-align: center;
     max-width: 100%;
-    background-image: url(../../assets/images/bg/header.svg);
+    background-image: url(../../assets/images/header.svg);
 }
     &--título {
             font-size: 4em;
-            font-family: "Montserrat", sans-serif;
-            font-weight:bold;
+            font-family: 'Roboto Condensed', sans-serif;
             color: #971717;
             animation-duration: 3s;
             animation-name: backInLeft;
@@ -65,7 +74,7 @@
   /* NAVBAR GENERAL*/
 .navbar {
     margin: 0rem auto;
-    padding: 1rem 3rem;
+    padding: 0rem 3rem;
     background-color: #111111;
     margin: 0rem;
     flex-wrap: wrap; 
@@ -85,7 +94,6 @@
     color: #fff;
     display: block;
     text-decoration: none;
-    font-weight: bold;
     width: 100%;
     text-align: center;
     font-size: 2em;

@@ -1,0 +1,121 @@
+.container__secciones {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    background-image: url(../../assets/images/header.svg);
+    .título__sección {
+        color: #971717;
+        font-size: 5em;
+        font-style: italic;
+        margin: 0rem;
+        text-align: center;
+        width: 100%;
+        &__descrip {
+            font-size: 1.5em;
+            padding: 1rem;
+            margin: 0rem;
+            width: 100%;
+            color: aliceblue;
+        }
+    }
+}
+
+.contenedor__servicios {
+	flex-wrap: wrap;
+	width: 1500px;
+	max-width: 100%;
+	margin: 0rem auto;
+	padding: 0rem auto;
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(6,auto);
+	grid-template-areas: "fotografía fotografía" "foto texto1" "video video" "texto2 video2" "edicion-de-video edicion-de-video" "video3 texto3";
+}
+.fotografía {
+    @extend %titulo-servicios;
+    grid-area: fotografía;
+}
+.video {
+    @extend %titulo-servicios;
+	grid-area: video;
+}
+.edicion-de-video {
+    @extend %titulo-servicios;
+    grid-area: edicion-de-video;
+}
+.texto {
+    @extend %texto-servicios;
+    grid-area: texto1;
+}
+.texto2 {
+    @extend %texto-servicios;
+    grid-area: texto2;
+}
+.texto3 {
+    @extend %texto-servicios;
+    grid-area: texto3;
+}
+.img-sec {
+    grid-area: foto;
+	padding: 0rem;
+	display: flex;
+	margin: auto 0rem;
+	width: 100%;
+}
+
+.video1 {
+	padding: 0rem;
+	display: flex;
+	margin: auto 0rem;
+	width: 100%;
+	grid-area: video1;
+	max-width: 100%;
+}
+.video3 {	display: flex;
+	margin: auto 0rem;
+	padding: 0rem;
+	width: 100%;
+	grid-area: video3;
+	max-width: 100%;
+}
+.foto {
+	grid-area: foto;
+	padding: 0;
+	max-width: 100%;
+}
+.texto1 {
+	grid-area: texto;
+	text-align: justify;
+	max-width: 100%;
+}
+.video2 {
+	max-width: 100%;
+	grid-area: video2;
+	display: flex;
+	align-items: flex-end;
+}
+
+@media only screen and (max-width:500px) {
+	.header {
+		max-width: 400px;
+	}
+	.contenedor-servicios {
+		flex-wrap: wrap;
+		width: 500px;
+		max-width: 100%;
+		margin: 0rem auto;
+		display: grid;
+		grid-gap: 0rem;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(10,auto);
+		grid-template-areas: "fotografía" "texto" "foto" "video" "texto2" "video2" "edicion-de-video" "texto3" "video3" "footer";
+	}
+	.fotografía {
+		max-width: 100%;
+	}
+	.foto {
+		max-width: 100%;
+	}
+}

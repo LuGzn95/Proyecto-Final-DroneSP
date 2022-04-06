@@ -8,93 +8,102 @@
     <meta name="description" content="Servicios ofrecidos: fotografía, video y edición de video">
     <meta name="keywords"  content="Fotografía, Video, Edición de video">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
-    <link rel="preload" href="../../section.css" as="style">
-    <link rel="stylesheet" href="../../section.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="preload" href="../../css/main.css" as="style">
+    <link rel="stylesheet" href="../../css/main.css">
 </head>
 <body>
-    <header class="header__general--secciones">
-        <div class="título__encabezado">
-            <h1>Sebastián Pedranti <span>Drone Pilot</span></h1>
+    <header class="container__header">
+        <div class="container__header--secciones">
+            <h1 class="container__header--título">Sebastián Pedranti<span class="container__header--título--span" >Drone Pilot</span></h1clas>
         </div>
-        <section class="container__navbar">
-            <div class="navbar">
-                <ul class="navbar__general">
-                    <li class="navbar__general__items"><a class="navbar__general__items__link" href="../../index.html">Inicio</a></li>
-                    <li class="navbar__general__items"><a class="navbar__general__items__link" href="../../assets/pages/sobremi.html">Sobre Mí</a></li>
-                    <li class="navbar__general__items"><a class="navbar__general__items__link" href="../../assets/pages/servicios.html">Servicios</a></li>
-                    <li class="navbar__general__items"><a class="navbar__general__items__link" href="../../assets/pages/portfolio.html">Portfolio</a></li>
-                    <li class="navbar__general__items"><a class="navbar__general__items__link" href="../../assets/pages/contacto.html">Contacto</a></li>
-                </ul>  
-            </div>                                    
-        </section>          
+        <div class="navbar" >
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="../../index.html">Inicio</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../pages/sobremi.html">Sobre Mí</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../pages/servicios.html">Servicios</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../pages/portfolio.html">Portfolio</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../pages/contacto.html">Contacto</a>
+                </li>
+            </ul> 
+        </div>                                             
     </header>
-    <main>
-        <div class="container__sección--sobremí">
-            <h2 class="título__sección">Servicios</h2>
-            <p class="título__sección__sobremí">A continuación se muestra una lista de los servicios que ofrezco. Contácteme si quiere saber más.</p>
-        </div>
-    </main>                                      
-    <div class="contenedor-servicios container"> 
+
+    <div class="container__secciones container">
+        <h2 class="título__sección">Servicios</h2>
+        <p class="título__sección__descrip">Te invito a que veas los servicios que ofrezco, no dudes en consultarme por tu proyecto!</p>
+    </div>      
+
+
+    <div class="contenedor__servicios container flex-wrap"> 
         <div class="fotografía">
-            <h2>Fotografía</h2>
+            <h2>Fotografías</h2>
         </div>
-        <div class="foto">
+        <div class="foto flex-wrap">
             <img class="img-sec img-fluid mi-clase" src="../images/puente.jpg" alt="puenteroca" width="100%" height="auto">
         </div>
         <div class="texto">
-            <p class="texto1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, omnis ipsa. Rerum nesciunt facilis odio ullam suscipit quos aliquam repellendus eos, ab reiciendis quasi. Ab at modi dolore tempore aliquid!</p>
+            <p class="texto1 flex-wrap">Captá tus mejores momentos, tus mejores trabajos, tus mejores logros desde el aire. Inmortalizá ese momento especial con una buena imágen.</p>
         </div>
-        <div class="video">
+        <div class="video flex-wrap">
             <h2>Video</h2>
         </div>
-        <div class="texto2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, harum atque eos suscipit temporibus, dicta magni modi, quidem dolore dignissimos v
+        <div class="texto2 flex-wrap">
+            <p class="flex-wrap">Como si fuera un pájaro, mi drone captará desde el aire lo que necesites, ya sea un evento deportivo, los avances de una obra, o lo que se te ocurra!</p>
         </div>
-        <div class="video2">
+        <div class="video2 flex-wrap">
             <iframe class="video1" width="100%" height="315" src="https://www.youtube.com/embed/rPuUZtiuw4E" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="750px"></iframe>
         </div>
         <div class="edicion-de-video">
             <h2>Edición de Video</h2>
         </div>
         <div class="video3">
-            <video src="../videos/franco_runner.mp4" controls width="100%"></video>
+            <iframe class="video3 flex-wrap" width="100%" height="315" src="https://www.youtube.com/embed/rPuUZtiuw4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div class="texto3">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptate doloribus numquam eum tempora! Dolore blanditiis deleniti incidunt harum ipsa? Ex deserunt quo expedita libero aperiam vero obcaecati excepturi eos?</p>
+        <div class="texto3 flex-wrap">
+            <p class="flex-wrap">Ya que me elegiste, puedo entregarte los videos en "crudo", o puedo ofrecerte el servicio de edición por un costo adicional. Podrás elegir la música y el tamaño del video para publicarlo en distintas redes sociales con la mejor calidad</p>
         </div>
-    </div>    
-    <footer class="container__footer">
-        <section class="contenido__footer">
-            <ul class="contenido__footer--lista">
-                <li class="contenido__footer__datos"><span class="">Cel:</span> 2984xxxxxx</li>
-                <li class="contenido__footer__datos"><span class="">Email:</span> sebxxxxx@gmail.com</li>
-                <li class="contenido__footer__datos"><span class="">General Roca, Rio Negro</span></li>
+    </div> 
+
+    <footer class="container__footer container">
+        <section class="contenido__footer container flex-wrap">
+            <ul class="contenido__footer--lista container flex-wrap">
+                <li class="datos"><span class="span__foot">Cel:</span> 2984xxxxxx</li>
+                <li class="datos"><span class="span__foot">Email:</span> sebxxxxx@gmail.com</li>
+                <li class="datos"><span class="span__foot">General Roca, Rio Negro</span></li>
             </ul>
-            <div class="contenido__footer--iconosredes">
-                <a href="https://www.facebook.com/sebastian.pedranti" target="_blank"><svg
-                        xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="64"
-                        height="64" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg></a>
-                <a href="https://www.instagram.com/dronesp2021" target="_blank"><svg
-                        xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="64"
-                        height="64" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <rect x="4" y="4" width="16" height="16" rx="4" />
-                        <circle cx="12" cy="12" r="3" />
-                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" /></svg></a>
-                <a href="https://www.youtube.com/channel/UCnB8bhVRKFxAGZMEIa0gVhw"
-                    target="_blank"><svg class="link" xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-brand-youtube" width="64" height="64" viewBox="0 0 24 24"
-                        stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <rect x="3" y="5" width="18" height="14" rx="4" />
-                        <path d="M10 9l5 3l-5 3z" /></svg></a>
+            <div class="contenido__footer--iconosredes flex-wrap flex-row">
+                <a class="iconos" href="https://www.facebook.com/sebastian.pedranti" target="_blank"><svg  class="iconos__link" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#971717" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                  </svg>
+                </a>
+                <a class="iconos" href="https://www.instagram.com/dronesp2021" target="_blank"><svg class="iconos__link" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#971717" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3" />
+                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                    </svg>
+                </a>
+                <a class="iconos" href="https://www.youtube.com/channel/UCnB8bhVRKFxAGZMEIa0gVhw"target="_blank"><svg class="iconos__link" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#971717" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="3" y="5" width="18" height="14" rx="4" />
+                    <path d="M10 9l5 3l-5 3z" />
+                    </svg>
+                </a>
             </div>
         </section>
     </footer>
+
 </body>
 </html>

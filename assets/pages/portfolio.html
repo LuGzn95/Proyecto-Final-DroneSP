@@ -7,33 +7,42 @@
     <title>DRONE SP. Portfolio</title>
     <meta name="description" content="Galería de mis trabajos con el drone">
     <meta name="keywords"  content="Fotografía, Video, Edición de video, Vuelo, Aire, Paisajes, Entretenimiento, Viajes, Estilo de vida">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="preload" href="../../section.css" as="style">
-    <link rel="stylesheet" href="../../section.css">
+    <link rel="preload" href="../../css/main.css" as="style">
+    <link rel="stylesheet" href="../../css/main.css">
 </head>
 <body>
-    <header class="header__general--secciones">
-        <div class="título__encabezado">
-            <h1>Sebastián Pedranti <span>Drone Pilot</span></h1>
+    <header class="container__header">
+        <div class="container__header--secciones">
+            <h1 class="container__header--título">Sebastián Pedranti<span class="container__header--título--span" >Drone Pilot</span></h1clas>
         </div>
-        <section class="container__navbar">
-            <div class="navbar">
-                <ul class="navbar__general">
-                    <li class="navbar__general__items"><a class="navbar__general__items__link" href="../../index.html">Inicio</a></li>
-                    <li class="navbar__general__items"><a class="navbar__general__items__link" href="../../assets/pages/sobremi.html">Sobre Mí</a></li>
-                    <li class="navbar__general__items"><a class="navbar__general__items__link" href="../../assets/pages/servicios.html">Servicios</a></li>
-                    <li class="navbar__general__items"><a class="navbar__general__items__link" href="../../assets/pages/portfolio.html">Portfolio</a></li>
-                    <li class="navbar__general__items"><a class="navbar__general__items__link" href="../../assets/pages/contacto.html">Contacto</a></li>
-                </ul>  
-            </div>                                    
-        </section>          
+        <div class="navbar" >
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="../../index.html">Inicio</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../pages/sobremi.html">Sobre Mí</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../pages/servicios.html">Servicios</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../pages/portfolio.html">Portfolio</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../pages/contacto.html">Contacto</a>
+                </li>
+            </ul> 
+        </div>                                             
     </header>
-    <main>
-        <div class="container__sección--sobremí">
-            <h2 class="título__sección">Portfolio</h2>
-            <p class="título__sección__sobremí">En esta galería puede ver una selección de mi trabajo. Espero que la disfrute.</p>
-        </div>
-    </main>                                      
+    <div class="container__secciones">
+        <h2 class="título__sección">Portfolio</h2>
+        <p class="título__sección__descrip">En esta sección te muestro algunos de mis trabajos realizados, acompañando proyectos desde el aire.</p>
+    </div>      
 
     <div class="grids-portfolio container">
         <div class="foto1">
@@ -63,37 +72,35 @@
         <div class="foto5">
             <img src="../images/agregar fotos en porfolio.png" alt="" width="300px">
         </div>                                                                      
-    <footer class="container__footer">
-        <section class="contenido__footer">
-            <ul class="contenido__footer--lista">
-                <li class="contenido__footer__datos"><span class="">Cel:</span> 2984xxxxxx</li>
-                <li class="contenido__footer__datos"><span class="">Email:</span> sebxxxxx@gmail.com</li>
-                <li class="contenido__footer__datos"><span class="">General Roca, Rio Negro</span></li>
-            </ul>
-            <div class="contenido__footer--iconosredes">
-                <a href="https://www.facebook.com/sebastian.pedranti" target="_blank"><svg
-                        xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="64"
-                        height="64" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg></a>
-                <a href="https://www.instagram.com/dronesp2021" target="_blank"><svg
-                        xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="64"
-                        height="64" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+
+        <footer class="container__footer container">
+            <section class="contenido__footer container flex-wrap">
+                <ul class="contenido__footer--lista container flex-wrap">
+                    <li class="datos"><span class="span__foot">Cel:</span> 2984xxxxxx</li>
+                    <li class="datos"><span class="span__foot">Email:</span> sebxxxxx@gmail.com</li>
+                    <li class="datos"><span class="span__foot">General Roca, Rio Negro</span></li>
+                </ul>
+                <div class="contenido__footer--iconosredes flex-wrap flex-row">
+                    <a class="iconos" href="https://www.facebook.com/sebastian.pedranti" target="_blank"><svg  class="iconos__link" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#971717" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                      </svg>
+                    </a>
+                    <a class="iconos" href="https://www.instagram.com/dronesp2021" target="_blank"><svg class="iconos__link" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#971717" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <rect x="4" y="4" width="16" height="16" rx="4" />
                         <circle cx="12" cy="12" r="3" />
-                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" /></svg></a>
-                <a href="https://www.youtube.com/channel/UCnB8bhVRKFxAGZMEIa0gVhw"
-                    target="_blank"><svg class="link" xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-brand-youtube" width="64" height="64" viewBox="0 0 24 24"
-                        stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                        </svg>
+                    </a>
+                    <a class="iconos" href="https://www.youtube.com/channel/UCnB8bhVRKFxAGZMEIa0gVhw"target="_blank"><svg class="iconos__link" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#971717" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <rect x="3" y="5" width="18" height="14" rx="4" />
-                        <path d="M10 9l5 3l-5 3z" /></svg></a>
-            </div>
-        </section>
-    </footer>
+                        <path d="M10 9l5 3l-5 3z" />
+                        </svg>
+                    </a>
+                </div>
+            </section>
+        </footer>    
 </body>
 </html>

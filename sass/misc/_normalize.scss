@@ -6,7 +6,7 @@
 *::after
 *::before
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
@@ -15,17 +15,17 @@
 
 html {
     font-size: 62.5%;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 body {
     background-image: linear-gradient(to bottom, #000000, #050505, #090909, #0d0d0d, #111111, #141414, #171717, #191919, #1c1c1c, #1e1e1e, #212121, #242424);
     overflow-x: hidden;
-    min-height: 100vh;
 }
 
 /*HELPERS*/
 .flex-row {
     display: flex;
+    flex-direction: row;
 }
 .flex-column {
     display: flex;
@@ -35,6 +35,7 @@ body {
     flex-wrap: wrap;
 }
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1500px;
+    margin: 0rem auto;
+    padding: 0rem auto;
 }

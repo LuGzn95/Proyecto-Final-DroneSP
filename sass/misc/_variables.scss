@@ -1,5 +1,57 @@
 /* VARIABLES */
+/* MAPS */
+$color-titulos: #971717;
+$color-footer: #000000;
+$font: (
+    small: 1em,
+    medium: 2em,
+    large: 4em,
+) ; 
 
-$principal: #000000;
-$secundario: #ffffff;
-$font-primary: Montserrat, sans serif; 
+/* EXTENDS */
+%descripción-de-pag {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    .tit-seccion {
+    	color: #971717;
+    	font-size: 5em;
+    	font-style: italic;
+    	font-weight: bold;
+    	margin: 0rem;
+    	text-align: center;
+    	width: 100%;
+    }
+    p {
+    	font-size: 2em;
+    	font-weight: bold;
+    	padding: 1rem;
+    	margin: 0rem;
+    	width: 100%;
+    }
+}
+%titulo-servicios {
+    font-size: map-get($font, medium);
+    font-weight: bold;
+    color: $color-titulos;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    padding: 0rem;
+    margin: 0rem;
+    max-width: 100%;
+}
+
+%texto-servicios {
+    color: beige;
+    font-size: map-get($font, medium);
+    padding: 0rem 1rem;
+    margin: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    text-align: justify;
+    max-width: 100%;
+}
