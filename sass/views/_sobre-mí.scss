@@ -1,3 +1,4 @@
+/* SOBRE MI */
 .container__secciones {
     margin: 0 auto;
     padding: 0 auto;
@@ -5,20 +6,24 @@
     width: 100%;
     background-image: url(../../assets/images/header.svg);
     .título__sección {
+        &--sm {        
         color: #971717;
         font-size: 5em;
         font-style: italic;
-        margin: 0rem;
+        margin: 0rem auto;
+        padding: 0rem auto;
         text-align: center;
         width: 100%;
-        &__descrip {
-            width: 100%;
-            max-width: 1300px;
+        }
+        &--descrip {
+            max-width: 95%;
             font-size: 2em;
-            padding: 5rem 2rem;
-            margin: 0rem 2rem;
             color: aliceblue;
-            justify-content: space-around;
+            padding: 1rem 2rem;
+            margin: 0rem 2rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
         }
     }
 }

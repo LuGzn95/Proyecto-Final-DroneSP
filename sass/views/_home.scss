@@ -1,3 +1,4 @@
+/* INDEX */
 .container__secciones {
     margin: 0 auto;
     padding: 0;
@@ -19,13 +20,11 @@
         }
     }
 }
-.foto__sección {
-    margin: 0 auto;
-    justify-content: center;
-    width: 150rem;
-    &__sobremí {
-        width: 100%;
-        margin: 0rem auto;
-        padding: 0rem;
-    }
+.picture__index {
+    max-width: 150rem;
+    height: 65vh;
+    max-width: 100%;
+    margin: 0rem auto;
+    padding: 0rem auto;
+    align-items: center;
 }

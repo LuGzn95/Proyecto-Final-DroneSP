@@ -4,18 +4,46 @@
     text-align: center;
     width: 100%;
     .título__sección {
+        &--sm {        
         color: #971717;
         font-size: 5em;
         font-style: italic;
-        margin: 0rem;
+        margin: 0rem auto;
+        padding: 0rem auto;
         text-align: center;
         width: 100%;
-        &__descrip {
-            font-size: 1.5em;
-            padding: 1rem;
-            margin: 0rem;
-            width: 100%;
+        }
+    &--descrip {
+            max-width: 95%;
+            font-size: 2em;
             color: aliceblue;
+            padding: 1rem 2rem;
+            margin: 0rem 2rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
         }
     }
 }
+
+.portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+    gap: 1rem;
+    .galería__item {
+        width: auto;
+        height: auto;
+        .galería__img {
+            width: 100%;
+            height: auto;
+        }
+        .galería__video {
+            width: 100%;
+            height: auto;
+        }
+    }                    
+}
+
+
+
