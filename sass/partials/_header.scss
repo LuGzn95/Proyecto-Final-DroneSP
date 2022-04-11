@@ -18,7 +18,8 @@
         padding-top: 2rem;
         margin-top: 2rem;
         margin: 2rem auto;
-        max-width: 10rem;
+        width: 10rem;
+        height: 10rem;
         align-items: center;
         margin: 1rem auto;
         }
@@ -51,7 +52,7 @@
     background-image: url(../../assets/images/header.svg);
     }
     &--título {
-            font-size: 4em;
+            font-size: 3em;
             font-family: 'Roboto Condensed', sans-serif;
             color: #971717;
             animation-duration: 3s;

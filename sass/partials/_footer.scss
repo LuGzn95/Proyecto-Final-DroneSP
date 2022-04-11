@@ -2,7 +2,7 @@
 .container__footer {
     grid-area: footer;
     padding: 0rem;
-    margin: 1rem auto;
+    margin: 0rem auto;
     background-image: url(../../assets/images/header.svg);
     justify-content: space-evenly;
     align-items: center;
@@ -29,6 +29,7 @@
                 color: #971717;
                 font-size: 2em;
                 list-style: none;
+                text-align: justify;
             .span__foot {
                 font-weight: bold;
             }
