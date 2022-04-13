@@ -1,3 +1,6 @@
+@import url(../misc/_variables.scss);
+@import url(../misc/_normalize.scss);
+
 /* SERVICIOS */
 .container__secciones {
 	width: 1500px;
@@ -27,7 +30,6 @@
 }
 
 .contenedor__servicios {
-	flex-wrap: wrap;
 	width: 1500px;
 	max-width: 100%;
 	margin: 0rem auto;
@@ -36,7 +38,13 @@
 	grid-gap: 1rem;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(6,auto);
-	grid-template-areas: "fotografía fotografía" "foto texto1" "video video" "texto2 video2" "edicion-de-video edicion-de-video" "video3 texto3";
+	grid-template-areas: 
+	"fotografía fotografía" 
+	"foto texto" 
+	"video video" 
+	"texto2 video2" 
+	"edicion-de-video edicion-de-video" 
+	"video3 texto3";
 }
 .fotografía {
     @extend %titulo-servicios;
@@ -90,7 +98,7 @@
 	padding: 0;
 	max-width: 100%;
 }
-.texto1 {
+.texto {
 	grid-area: texto;
 	text-align: justify;
 	max-width: 100%;
@@ -102,26 +110,39 @@
 	align-items: flex-end;
 }
 
-
-@media only screen and (max-width:500px) {
-	.header {
-		max-width: 400px;
-	}
-	.contenedor-servicios {
-		flex-wrap: wrap;
-		width: 500px;
-		max-width: 100%;
-		margin: 0rem auto;
-		display: grid;
-		grid-gap: 0rem;
+@media only screen and (max-width:748px) {
+	.contenedor__servicios {
+		gap: 0;
 		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: repeat(10, 1fr);
-		grid-template-areas: "fotografía" "texto" "foto" "video" "texto2" "video2" "edicion-de-video" "texto3" "video3" "footer";
+		grid-template-rows: repeat(9,auto);
+		grid-template-areas: 
+			"fotografía"
+			"texto" 
+			"foto" 
+			"video" 
+			"texto2" 
+			"video2" 
+			"edicion-de-video" 
+			"texto3"
+			"video3" ;
 	}
 	.fotografía {
 		max-width: 100%;
 	}
 	.foto {
 		max-width: 100%;
+	}
+	%titulo-servicios {
+		padding: 0rem;
+		margin: 0rem;
+		max-width: 100%;                           
+	}
+	%texto-servicios {
+		p {
+			font-size: map-get($font, small);
+			padding: 0rem;
+			margin: 1rem auto;
+			max-width: 100%;
+		}		
 	}
 }
