@@ -412,6 +412,16 @@ body {
       width: 100%;
       height: auto; }
 
+.container__portfolio {
+  max-width: 1500px;
+  width: 100%;
+  align-items: center;
+  align-content: center; }
+  .container__portfolio .foto1 {
+    max-width: 40%; }
+  .container__portfolio .video1 {
+    max-width: 60%; }
+
 /* CONTACTO */
 .container__secciones {
   margin: 0 auto;
@@ -478,7 +488,7 @@ label {
   font-size: 1.5em;
   color: #971717; }
 
-button {
+.button__submit {
   width: 100%;
   max-width: 33rem;
   height: 4.5rem;
