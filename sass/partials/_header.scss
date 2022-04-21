@@ -44,8 +44,8 @@
     padding: 0rem auto;
     margin: 0rem auto;
     &--secciones {
-    padding: 0rem;
-    margin: 0rem;
+    padding: 1rem;
+    margin: 1rem 0rem;
     margin-bottom: 0rem;
     text-align: center;
     max-width: 100%;
@@ -84,18 +84,17 @@
     list-style-type: none;
     }
     &__link {
+    text-align: center;
     padding: 1rem;
     color: #fff;
     display: block;
     text-decoration: none;
     width: 100%;
     font-size: 2em;
-    text-align: justify;
     flex-wrap: wrap; 
         &:hover {
             background: #971717;
             color: #ffffff; 
-            padding-left: 1rem;
         }
     }
 }
