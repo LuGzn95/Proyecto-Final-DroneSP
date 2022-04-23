@@ -65,7 +65,7 @@ body {
   padding: 0rem auto; }
 
 /* PARTIALS */
-/* ESTILOS HEADER Y NAVBAR*/
+/* ESTILOS HEADER Y NAVBAR PARA TODAS LAS SECCIONES*/
 /* HEADER INDEX*/
 .container__header {
   padding: 0rem auto;
@@ -222,7 +222,8 @@ body {
 .picture__index {
   max-width: 150rem;
   height: 65vh;
-  max-width: 100%;
+  max-height: auto;
+  width: 100%;
   margin: 0rem auto 1rem auto;
   padding: 0rem auto;
   align-items: center; }
@@ -231,7 +232,7 @@ body {
 .container__secciones {
   margin: 0 auto;
   padding: 0 auto;
-  text-align: center;
+  text-align: justify;
   width: 100%;
   background-image: url(../../assets/images/header.svg); }
   .container__secciones .título__sección--sm {
@@ -248,9 +249,9 @@ body {
     color: aliceblue;
     padding: 1rem 2rem;
     margin: 0rem 2rem;
-    text-align: justify;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    text-align: justify; }
 
 .foto__sección {
   margin: 1rem auto;

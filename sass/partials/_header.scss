@@ -1,4 +1,4 @@
-/* ESTILOS HEADER Y NAVBAR*/
+/* ESTILOS HEADER Y NAVBAR PARA TODAS LAS SECCIONES*/
 
 /* HEADER INDEX*/
 .container__header {
@@ -38,7 +38,7 @@
         }
     }        
 }
-  /* HEADER SECCIONES*/
+/* HEADER SECCIONES*/
 .container__header {
     grid-area: header;
     padding: 0rem auto;
@@ -65,7 +65,7 @@
         }
     }
 }
-  /* NAVBAR GENERAL*/
+/* NAVBAR GENERAL*/
 .navbar {
     margin: 0rem auto;
     padding: 0rem 3rem;
@@ -98,9 +98,5 @@
         }
     }
 }
-  
-  
-  
-  
   
   

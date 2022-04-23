@@ -15,10 +15,12 @@
     <link rel="stylesheet" href="../../css/main.css">
 </head>
 <body>
+    <!-- Título -->
     <header class="container__header container flex-wrap">
         <div class="container__header--secciones">
             <h1 class="container__header--título">Sebastián Pedranti<span class="container__header--título--span" >Drone Pilot</span></h1clas>
         </div>
+        <!-- Navbar -->
         <div class="navbar" >
             <ul class="menu">
                 <li class="menu__item">
@@ -39,36 +41,34 @@
             </ul> 
         </div>                                             
     </header>
-
+    <!-- Sección + descripción -->
     <div class="container__secciones container">
         <h2 class="título__sección">Contáctame</h2>
         <p class="título__sección--descrip">Completá todos los campos y en breve me pondré en contacto contigo!</p>
     </div>   
-
+    <!-- Formulario de contacto -->
     <div class="contact_form">
-        <div class="formulario">      
-                                   
-                    <label for="nombre" class="colocar_nombre">Nombre<span class="obligatorio">*</span></label>
-                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-    
-                    <label for="email" class="colocar_email">Email<span class="obligatorio">*</span></label>
-                    <input type="email" name="introducir_email" placeholder="Escribe tu Email">
-              
-                    <label for="telefone" class="colocar_telefono">Teléfono<span class="obligatorio">*</span></label>
-                    <input type="tel" name="introducir_telefono" placeholder="Escribe tu teléfono">   
-                    
-                    <label for="asunto" class="colocar_asunto">Asunto<span class="obligatorio">*</span></label>
-                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-                                  
-                    <label for="mensaje" class="colocar_mensaje">Mensaje<span class="obligatorio">*</span></label>                     
-                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>                           
-                    <button class="button__submit" type="submit" name="enviar_formulario" id="enviar">Enviar</button>
-                    <p class="aviso">
-                        <span class="obligatorio"> * </span>los campos son obligatorios.
-                    </p>          
-            </div>  
-     </div>
-
+        <div class="formulario">                            
+            <label for="nombre" class="colocar_nombre">Nombre<span class="obligatorio">*</span></label>
+            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+            <label for="email" class="colocar_email">Email<span class="obligatorio">*</span></label>
+            <input type="email" name="introducir_email" placeholder="Escribe tu Email">
+        
+            <label for="telefone" class="colocar_telefono">Teléfono<span class="obligatorio">*</span></label>
+            <input type="tel" name="introducir_telefono" placeholder="Escribe tu teléfono">   
+            
+            <label for="asunto" class="colocar_asunto">Asunto<span class="obligatorio">*</span></label>
+            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                          
+            <label for="mensaje" class="colocar_mensaje">Mensaje<span class="obligatorio">*</span></label>                     
+            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>                           
+            <button class="button__submit" type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+            <p class="aviso">
+                <span class="obligatorio"> * </span>los campos son obligatorios.
+            </p>          
+        </div>  
+    </div>
+    <!-- Footer -->
     <footer class="container__footer container">
         <section class="contenido__footer container flex-wrap">
             <ul class="contenido__footer--lista container flex-wrap">
@@ -98,7 +98,6 @@
             </div>
         </section>
     </footer>    
-
 </body>
 </html>
 
