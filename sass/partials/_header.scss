@@ -77,7 +77,7 @@
     border-top: 0.1rem solid #fff;
     border-bottom: 0.1rem solid #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 0rem;
     flex-wrap: wrap;
     &__item {
@@ -95,6 +95,7 @@
         &:hover {
             background: #971717;
             color: #ffffff; 
+            transition:all .5s ease-in-out;
         }
     }
 }

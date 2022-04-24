@@ -28,6 +28,11 @@
     margin: 0rem auto 1rem auto;
     padding: 0rem auto;
     align-items: center;
+    border-radius: 1rem;
+    &:hover {
+        -webkit-transform:scale(0.99);transform:scale(0.99);
+        transition:all .5s ease-in-out;
+    }
 }
 
 

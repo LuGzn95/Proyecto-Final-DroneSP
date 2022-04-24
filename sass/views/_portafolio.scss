@@ -1,5 +1,5 @@
 .container__secciones {
-    margin: 0 auto;
+    margin: 0 auto 1rem auto;
     padding: 0;
     text-align: center;
     width: 100%;
@@ -28,53 +28,73 @@
 
 .grid__portfolio {
 	display: grid;
+    margin-top: 1rem;
 	justify-content: space-around;
 	grid-template-columns: repeat (3, 1fr);
-	grid-template-rows: repeat(4, 0.5fr);
-	gap: 1% 1%;
+	grid-template-rows: repeat(3, 1fr);
+	gap: 1%;
 	grid-auto-flow: row;
 	grid-template-areas: 
         "item1 item2 item3"
         "item4 item5 item6"
         "item7 item8 item9"
 }
-.foto1 {
-	grid-area: foto1;
-	align-items: center;
-	max-width: 100%;
-}
-.foto2 {
-	grid-area: foto2;
-	max-width: 100%;
-}
-.foto3 {
-	grid-area: foto3;
-	max-width: 100%;
-}
-.foto4 {
-	grid-area: foto4;
-	max-width: 100%;
-}
-.video4 {
-	grid-area: video4;
-	max-width: 100%;
-}
-.foto5 {
-	grid-area: foto5;
-	max-width: 100%;
+.item {
+    &:hover {
+        -webkit-transform:scale(0.99);transform:scale(0.99);
+        filter: opacity(.5);
+        transition:all .5s ease-in-out;
+    }
+    &galería__video {
+        &--vid2 {
+            grid-area: item2;
+        }
+        &--vid4 {
+            grid-area: item4;
+        }
+        &--vid6 {
+            grid-area: item6;
+        }
+        &--vid8 {
+            grid-area: item8;
+        }
+    }
+    &galería__img {
+        border-radius: 1rem;
+        &galería__img {
+            max-width: 100%;
+            max-height: 100%;
+            &--img1 {
+                grid-area: item1;
+            }
+            &--img3 {
+                grid-area: item3;
+            }
+            &--img5 {
+                grid-area: item5;
+            }
+            &--img7 {
+                grid-area: item7;
+            }
+            &--img9 {
+                grid-area: item9;
+            }
+        }
+
+    }
 }
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:600px) {
 	.header {
-		max-width: 400px;
+		max-width: 600px;
 	}
 	.grid__portfolio {
 		flex-wrap: wrap;
-		width: 375px;
+		width: 600px;
 		max-width: 100%;
 		margin: 0rem auto;
 		display: grid;
-		grid-gap: 0rem;
+		grid-gap: 1rem;
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: repeat(9,auto);
 		grid-template-areas: 
@@ -87,5 +107,25 @@
         "item7"
         "item8"
         "item9",
+	}
+}
+
+
+@media only screen and (min-width:600px) and (max-width:1024px) {
+	.grid__portfolio {
+		flex-wrap: wrap;
+		width: 1024px;
+		max-width: 100%;
+		margin: 0rem auto;
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(5,auto);
+		grid-template-areas: 
+            "item1   item2"
+            "item3   item4"
+            "item5   item6"
+            "item7   item8"
+            "item9   item9",
 	}
 }

@@ -3,6 +3,7 @@
 /* MAPS */
 $color-titulos: #971717;
 $color-footer: #000000;
+$color-datos: #fff;
 $font: (
     small: 1em,
     medium: 2em,
@@ -38,11 +39,12 @@ $font: (
         font-size: map-get($font, intermedio);
         font-weight: bold;
         color: $color-titulos;
-        text-decoration: underline;
+        text-decoration: none;
+        background-color: rgb(15, 15, 15);
         display: flex;
         justify-content: center;
         padding: 0rem;
-        margin: 1rem auto 0rem auto;
+        margin: 0rem auto;
         max-width: 100%;
     }                           
 }
