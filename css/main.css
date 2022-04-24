@@ -31,7 +31,6 @@
   text-align: justify; }
 
 /* GLOBALES */
-/* IMPORTS */
 /* NORMALIZE */
 *,
 *::after *::before * {
@@ -48,7 +47,7 @@ body {
   background-image: linear-gradient(to bottom, #000000, #050505, #090909, #0d0d0d, #111111, #141414, #171717, #191919, #1c1c1c, #1e1e1e, #212121, #242424);
   overflow-x: hidden; }
 
-/*HELPERS*/
+/* HELPERS */
 .flex-row {
   display: flex;
   flex-direction: row; }
@@ -182,14 +181,15 @@ body {
       margin: auto 2rem;
       padding: 1rem;
       align-content: center;
-      text-align: center;
-      color: #ffffff; }
+      text-align: center; }
       .container__footer .contenido__footer--lista .datos {
         font-size: 2em;
         list-style: none;
         text-align: center; }
         .container__footer .contenido__footer--lista .datos .span__foot {
-          font-weight: bold; }
+          font-weight: bold;
+          color: #626262;
+          text-align: justify; }
       .container__footer .contenido__footer--lista .iconos {
         justify-content: space-evenly;
         margin: auto 2rem;
@@ -239,7 +239,7 @@ body {
 .container__secciones {
   margin: 0 auto;
   padding: 0 auto;
-  text-align: justify;
+  text-align: center;
   width: 100%;
   background-image: url(../../assets/images/header.svg); }
   .container__secciones .título__sección--sm {

@@ -25,13 +25,14 @@
             padding: 1rem;
             align-content: center;
             text-align: center;
-            color: #ffffff;
             .datos {
                 font-size: 2em;
                 list-style: none;
                 text-align: center;
             .span__foot {
                 font-weight: bold;
+                color: $color-datos;
+                text-align: justify;
             }
         }
         .iconos {
